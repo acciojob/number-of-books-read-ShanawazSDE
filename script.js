@@ -18,6 +18,12 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+	  let count  = 0;
+  library.forEach((obj) => {
+    if(obj['readingStatus']){
+      count++;
+    }
+  })
 };
 
 // Do not change the code below
